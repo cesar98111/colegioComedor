@@ -1,0 +1,10 @@
+{
+    "verbose": true,
+    "wchat": [
+        "src"
+    ],
+    "ignore":[
+        "node_modules"
+    ],
+    "ext": "js , mjs"
+}

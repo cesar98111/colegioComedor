@@ -1,0 +1,880 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.application{
+  width: 100%;
+  height: 100%;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+}
+.container-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/comedor.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.container-login-form{
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.492);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  height: 70%;
+  width: 70%;
+}
+.input-login{
+  border:1px solid gray ;
+  border-radius: 2px;
+  height: 40px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 20px;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+}
+label{
+  width: 80%;
+  text-align: start;
+}
+.container-login-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 50%;
+}
+.container-login-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.button-login{
+  height: 20%;
+  width: 40%;
+  background-color: rgb(79, 79, 242);
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+  color:white;
+  font-weight: bold;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+
+}
+.button-login:active{
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.logo-imagen{
+  height: 30%;
+  width: 50%;
+}
+.container-login{
+  height: 100%;
+  width: 100%;
+}
+.container-sig-in{
+  height: 100%;
+  width: 100%;
+}
+
+
+.container-link{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+  width: 20%;
+  border-left: 1px solid #2652f1;
+}
+.links:hover{
+  color: grey;
+}
+.userName{
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.buttonEtage{
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  background-color: rgb(67, 67, 252);
+  border-radius: 10px;
+  padding: 10px;
+  border:none;
+  font-size: 15px;
+  font-weight: bold;
+  color:white;
+  width: 15%;
+}
+.draw{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #557AFF;
+  width: 100%;
+  height: 72px;
+  -webkit-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+}
+.containerUsers{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90%;
+  background: linear-gradient(to bottom left, #FAFF00, white);
+}
+@media (min-width:1100px) {
+  .navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #557AFF;
+    width: 100%;
+    height: 72px;
+    -webkit-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  }
+  .backgroundImage{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 60%;
+    
+  }
+  .drawContainer{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    transform-style:preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  
+  .selectStage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 80%;
+    width: 40%;
+    
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .initContainer{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    background: linear-gradient(to bottom left, #FAFF00, white);
+  
+  }
+  #item-2:checked ~ .draw #selector-1,
+  #item-1:checked ~ .draw #selector-3,
+  #item-3:checked ~ .draw #selector-2{
+    transform:translateX(-40%) scale(0.8) ;
+    opacity: 0.6;
+    z-index: 0;
+  }
+  #item-3:checked ~ .draw #selector-1,
+  #item-1:checked ~ .draw #selector-2,
+  #item-2:checked ~ .draw #selector-3{
+    transform:translateX(40%) scale(0.8) ;
+    opacity: 0.6;
+    z-index: 0;
+  }
+  #item-1:checked ~ .draw #selector-1,
+  #item-2:checked ~ .draw #selector-2,
+  #item-3:checked ~ .draw #selector-3{
+    transform:translateX(0) scale(1) ;
+    z-index: 1;
+
+  }
+
+}
+@media(max-width: 1100px) {
+  
+  .selectStage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    height: 40%;
+    width: 50%;
+  
+  }
+  .drawContainer{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 100px;
+  }
+  .draw{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    
+  }
+  
+  
+
+  .buttonEtage{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+    background-color: rgb(67, 67, 252);
+    border-radius: 10px;
+    padding: 10px;
+    border:none;
+    font-size: 80%;
+    font-weight: bold;
+    color:white;
+    width: 50%;
+  }
+  .navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #557AFF;
+    width: 100%;
+    height: 72px;
+    -webkit-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  }
+  .backgroundImage{
+    width: 100%;
+    height: 300px;
+    
+  }
+  .initContainer{
+  
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300%;
+    margin: auto;
+    background: linear-gradient(to bottom left, #FAFF00, white);
+  
+  }
+  .containerUsers{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom left, #FAFF00, white);
+  }
+}
+
+
+
+
+
+.stageImage{
+  
+  height: 100%;
+  width: 90%;
+  border-radius:100%;
+  -webkit-box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+}
+
+input[type="radio"]{
+  display:none
+}
+
+
+th{
+  
+  background-color:#557AFF;
+  color:white;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(64, 64, 250);
+}
+td{
+  background-color: white;
+  border-bottom: 1px solid rgb(184, 182, 182);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+tr:hover{
+  background-color: rgb(213, 212, 212);
+}
+table{
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.button-style{
+  border:none;
+  padding: 10px;
+  margin-right: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.userHeader{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  
+}
+.userAddButton{
+  
+  text-decoration: none;
+  width: 15%;
+  background-color: #557AFF;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  border:none;
+  
+}
+.containerShearch{
+  width: 30%;
+}
+.formShearch{
+  display: flex;
+  flex-direction: row;
+  border:2px solid rgb(255, 217, 0) ;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+}
+.buttonShearch{
+  width: 20%;
+  height: 100%;
+  background-color: #FAFF00;
+  border: none;
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+  background-position:center ;
+  transition: background 0.8s;
+}
+.buttonShearch:hover{
+  background-image: radial-gradient(circle, transparent 1%,#ffbf00 1%);
+  background-color: #ffbf00;
+  background-position:center;
+  background-size: 15000%;
+
+}
+.buttonShearch:active{
+  transition: background 0s;
+  background-color: #f2c84a;
+  background-size: 100%;
+}
+.inputShearch{
+  width: 80%;
+  height: 100%;
+  border:none;
+  background-color: white;
+  padding: 12px;
+  outline: none;
+  border-radius: 10px 0px 0px 10px;
+}
+.containerAddUsers{
+  -webkit-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  width: 80%;
+  height: 80%;
+  background-color: white;
+}
+.inputUsers{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.containerAddUsers form{
+  height: 100%;
+}
+.inputUsers p{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.inputUsers p label{
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 12px;
+}
+
+select{
+  border: none;
+  background-color: #e8eb60;
+  height: 24px;
+  border-radius: 10px;
+  text-align: center;
+}
+option{
+  border:none;
+  color:gray;
+}
+option:hover{
+  background-color: #fadc45;
+}
+.userForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.userButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20%;
+}
+.studentOption{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.studentButton{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color:rgb(79, 79, 242) ;
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+}
+.inputUsers input{
+  border:none;
+  background-color: #e8eb60;
+  height: 24px;
+  border-radius: 10px;
+  text-align: center;
+}
+.importForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed rgb(138, 138, 138);
+  border-radius: 5px;
+  height: 40%;
+  width: 40%;
+}
+.onFile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.containerFileButton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: 10%;
+  justify-content: space-evenly;
+  
+}
+
+.buttonDeleteFile{
+  height: 60%;
+  border:none;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(253, 83, 83);
+  padding: 10px;
+  border-radius: 5px;
+}
+.buttonConfirmFile{
+  height: 60%;
+  border:none;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(109, 243, 52);
+  padding: 10px;
+  border-radius: 5px;
+}
+.paginationButton{
+  cursor: pointer;
+  padding: 10px;
+  width: 70px;
+  background-color: #557AFF;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.paginationContainer{
+  
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
+}
+.pageNum{
+  padding: 10px;
+  width: 40px;
+  background-color: #bfcbf8;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pageNum:hover{
+  transition: background 0.8s;
+  background-color: #557AFF;
+}
+.pageNum:active{
+  background-color: #2652f1;;
+} 
+.containerCourse{
+  background: linear-gradient(to bottom left, #FAFF00, white);
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.courseItems{
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #557AFF;
+  width: 100px;
+  height: 100px;
+  color:white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.courseItems:hover{
+  background-color: #2652f1;
+}
+.viewButton{
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #557AFF;
+  color:white;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.viewContainer{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+.studentHeader{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+.modifyDayButton{
+  background-color: #557AFF;
+  border:none;
+  color:white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor:pointer;
+}
+.headerDay{
+  background-color:#557AFF;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.filterDayContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.date{
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor:pointer;
+  background-color: #557AFF;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.passwordButton{
+  padding: 10px;
+  border: none;
+  color:white;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #557AFF;
+  position: relative;
+  top:40px
+}
+
+.passwordContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 40%;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+}
+
+.passwordTitle{
+  background-color: #557AFF;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.buttonPasswordConfirm{
+  background-color: #557AFF;
+  color:white;
+  border-radius: 10px;
+  padding: 10px;
+  border:none;
+  font-weight: bold;
+  margin-top: 40px;
+  width: 40%;
+}
+
+.passwordForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+
+
+}
+.inputsPassword{
+  background-color: #fadc45;
+  border-radius: 10px;
+  border:none;
+  height: 30px;
+  margin-top: 10px;
+}
+.containerAddStudents{
+  height: 350px;
+  width: 80%;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 18px -5px rgba(0,0,0,0.75);
+}
+.formStudents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inputsStudents{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.columnName{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 50%;
+}
+
+.columnCourse{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 50%;
+}
+
+.inputStudent{
+  background-color: #fadc45;
+  border-radius: 10px;
+  border:none;
+  height: 30px;
+
+}
+
+.etageSelect{
+  background-color: #fadc45;
+  border: nonde;
+  width: 40%;
+  color:"white"
+}
+
+.studentAddTitle{
+  background-color: #557AFF;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.buttonAddStudent{
+  border:none;
+  background-color: #557AFF;
+  border-radius: 10px;
+  color:white;
+  width: 10%;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.TitleHighs{
+  background-color: #557AFF;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.rowCourse{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.courseTitle{
+  background-color: #557AFF;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 60%;
+}
+.errorMessage{
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
